@@ -1,9 +1,7 @@
 // Write your solution here!
 const cats = ['Milo', 'Otis', 'Garfield']
 
-function destructivelyAppendCat() {
-    cats.push('Ralph');
-}
+const destructivelyAppendCat = () => cats.push('Ralph');
 
 function destructivelyPrependCat() {
     cats.unshift('Bob');
@@ -17,7 +15,7 @@ function destructivelyRemoveFirstCat() {
     cats.shift('Milo');
 }
 
-function appendCat(name) {
+const appendCat = name => {
     const newCats = [...cats, name];
     return newCats;
 }
